@@ -1,0 +1,41 @@
+li{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px; //defualt
+
+    @media only screen and (max-width:1220px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width:1080px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width:940px) {
+        font-size: 10px;
+    }
+
+    @media only screen and (max-width:680px) {
+        font-size: 8px;
+    }
+}
+
+@mixin fcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//-------------------------------------//
