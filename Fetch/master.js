@@ -11,20 +11,20 @@ function getLog(log) {
     console.log(log)
 }
 //----------------------------------------//
-const myreq = new Request('https://random-data-api.com/api/v2/users?size=100')
+const myreq = new Request('https://random-data-api.com/api/v2/users?size=20')
 let userCounter = 0
 let loadbar = document.getElementById('fill')
 async function getUser() {
-    loadbar.style.background='green'
+    loadbar.style.background = 'green'
     let i = 100
-    let limit = parseInt(Math.random()*70)+10
+    let limit = parseInt(Math.random() * 70) + 10
     getLog(limit)
     let temp = setInterval(() => {
         loadbar.style.right = i + '%'
         i--
         if (i == limit) {
             clearInterval(temp)
-            loadbar.style.transition='0.4s'
+            loadbar.style.transition = '0.4s'
         }
     }, 1);
     try {
@@ -35,7 +35,8 @@ async function getUser() {
                     let user = document.createElement('div')
                     user.setAttribute('class', 'user')
                     user.innerHTML = `
-                    ${userCounter}
+                    <span class='index'>${userCounter}</span>
+                    <span>User ID: ${x[index].id}</span>
                     <span>User ID: ${x[index].uid}</span>
                     <span>Name: ${x[index].first_name}</span>
                     <span>Family name: ${x[index].last_name}</span>
@@ -52,10 +53,10 @@ async function getUser() {
                 });
             })
         })
-        loadbar.style.right='0%'
+        loadbar.style.right = '0%'
         setTimeout(() => {
-        loadbar.style.transition='none'
-        document.getElementById('loadPop').classList.add('hidden')
+            loadbar.style.transition = 'none'
+            document.getElementById('loadPop').classList.add('hidden')
         }, 500);
     } catch {
         loadbar.style.background = 'red'
@@ -66,4 +67,8 @@ getUser()
 document.getElementById('load').addEventListener('click', () => {
     document.getElementById('loadPop').classList.remove('hidden')
     getUser()
+})
+
+document.getElementsByClassName('close')[0].addEventListener('click',()=>{
+    document.getElementById('loadPop').classList.add('hidden')
 })
