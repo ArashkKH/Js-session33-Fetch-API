@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Real Loading</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <button id="load">Load Data</button>
+
+        <div id="loadPop">
+            <div id="loading">
+                please wait
+                <div id="loadbar">
+                    <div id="fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="target">
+            <div class="test d-none">
+                <span>User ID:</span>
+                <span>Name: </span>
+                <span>Family name: </span>
+                <span>Username: </span>
+                <span>E-mail: </span>
+                <span>Gender: </span>
+                <span>Employment: </span>
+                <span>City: </span>
+                <span>Credit Card: </span>
+                <span>Status: </span>
+            </div>
+        </div>
+
+    </main>
 </body>
 <script src="master.js"></script>
+
 </html>

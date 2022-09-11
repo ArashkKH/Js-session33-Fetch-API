@@ -1,0 +1,39 @@
+{
+    "id": 8950,
+    "uid": "b5102994-83c6-429f-bb2e-242e13559b0e",
+    "password": "3JkcGSHj5q",
+    "first_name": "Reita",
+    "last_name": "Frami",
+    "username": "reita.frami",
+    "email": "reita.frami@email.com",
+    "avatar": "https://robohash.org/velitvoluptatemrepudiandae.png?size=300x300\u0026set=set1",
+    "gender": "Male",
+    "phone_number": "+64 278.330.9790 x584",
+    "social_insurance_number": "982543605",
+    "date_of_birth": "1986-10-08",
+    "employment": {
+        "title": "Global Hospitality Supervisor",
+        "key_skill": "Communication"
+    },
+    "address": {
+        "city": "Emmittchester",
+        "street_name": "Ferry Tunnel",
+        "street_address": "487 Will Ways",
+        "zip_code": "24129",
+        "state": "West Virginia",
+        "country": "United States",
+        "coordinates": {
+            "lat": 1.0608148875341215,
+            "lng": -150.92337956548783
+        }
+    },
+    "credit_card": {
+        "cc_number": "6771-8975-4930-6523"
+    },
+    "subscription": {
+        "plan": "Silver",
+        "cc_number": "Blocked",
+        "payment_method": "Paypal",
+        "term": "Annual"
+    }
+}
